@@ -65,6 +65,7 @@ Many seem to be interested in learning Agile methods and modern working practice
 - Ran Nyman – https://www.youtube.com/watch?v=ZISdTPrtS0o
 - Craig Larman – https://www.youtube.com/watch?v=HmdGvq_8rVQ
 - Richard Hackman’s Leading Teams (Performance): https://www.amazon.com/Leading-Teams-Setting-Stage-Performances/dp/1578513332/ref=sr_1_1?s=books&ie=UTF8&qid=1544604704&sr=1-1&keywords=leading+teams
+- Sean Goedecke's “How I ship projects at big tech companies” – https://www.seangoedecke.com/how-to-ship/
 - Evolutionary Teal Paradigm (the one we’re currently in)
     - Reinventing Organizations
         - Frederic Laloux - https://www.youtube.com/watch?v=gcS04BI2sbk

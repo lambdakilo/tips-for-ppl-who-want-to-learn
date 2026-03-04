@@ -1,4 +1,5 @@
 # These are our Tips For People Who Want To Learn
+[![Link Checker](../../actions/workflows/links.yml/badge.svg)](../../actions/workflows/links.yml)
 
 1. [Foreword](#user-content-foreword)
 1. [Career progress](#user-content-career-progress)
@@ -57,10 +58,10 @@ Recommended books about teamwork and self improvement:
 
 Many seem to be interested in learning Agile methods and modern working practices for software teams. So, here are some recommendations from our coaches, mostly from @cryptotommi-joentakanen:
 
-- Full map of most things agile: https://www.mindmeister.com/425542788/agile-world?fullscreen=1
+- Full map of most things agile: https://www.mindmeister.com/app/map/425542788?fullscreen=1&v=public
 - Product Owner TL;DR: https://www.youtube.com/watch?v=502ILHjX9EE
 - Kanban: TL;DR https://www.youtube.com/watch?v=R8dYLbJiTUE, Advanced: Eric Brechner – https://www.youtube.com/watch?v=CD0y-aU1sXo
-- Jeff Sutherland’s “Scrum” Audiobook: https://www.youtube.com/watch?v=qr8hjVX4GX0
+- Jeff Sutherland’s “Scrum” Audiobook: https://www.amazon.com/Scrum-audiobook/dp/B00NHZ6PPE/
 - Craig Larman’s LeSS (Scaling Scrum) book https://www.amazon.com/Large-Scale-Scrum-More-Craig-Larman/dp/0321985710
 - Ran Nyman – https://www.youtube.com/watch?v=ZISdTPrtS0o
 - Craig Larman – https://www.youtube.com/watch?v=HmdGvq_8rVQ
@@ -206,25 +207,25 @@ First, the [Teach Yourself Computer Science](https://teachyourselfcs.com/) site 
 
 @auramo points out a couple of "programming philosophy" presentations for the "post-object-oriented" world.
 - The Value of Values with Rich Hickey https://www.youtube.com/watch?v=-6BsiVyC1kM
-- Simple Made Easy https://www.infoq.com/presentations/Simple-Made-Easy
+- Simple Made Easy https://www.infoq.com/presentations/Simple-Made-Easy/
 - ... and also the ever-relevant [Domain Driven Design](Domain Driven Design
 https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215) by Eric Evans.
 - Also Steve Yegge's rants, highly opinionated, have been very influential. For example: https://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html
 
-@eagleflow I’ve read http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/ multiple times. Everyone who is interested in programming language design should read it. tl;dr: there are costs to introducing additional colors of functions to your codebase. Weight the options carefully.
+@eagleflow I’ve read https://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/ multiple times. Everyone who is interested in programming language design should read it. tl;dr: there are costs to introducing additional colors of functions to your codebase. Weight the options carefully.
 
 @srosenda: For bottom-up learning I recommend wholeheartedly [Ben Eater’s video lessons](https://eater.net/) and [Nand to Tetris](https://www.nand2tetris.org/).
 
-@raimohanska: Colin S Gordon has a real treasure trove of linked free Computer Science books [here](https://csgordon.github.io/books.html).
+@raimohanska: Colin S Gordon has a real treasure trove of linked free Computer Science books [here](https://csgordon.github.io/books/).
 
 #### Programming Fundamentals
 
 These are especially recommended for self-taught programmers who feel they might want to beef up their understanding on the theoretical side of computer programming.
 
 - @lauripiispanen: Stanford's [Algorithms](https://www.coursera.org/specializations/algorithms) on Coursera
-- @RikuMantysalo: Harvard's [CS50](https://online-learning.harvard.edu/course/cs50-introduction-computer-science)
-- @erikssa3: [The Imposter's Handbook](https://bigmachine.io/products/the-imposters-handbook/)
-- @jlehva: [Programming Languages: Principles and Paradigms](https://www.springer.com/gp/book/9781848829138) and Arto Wikla's [Ohjelmointikielten periaatteet](https://www.cs.helsinki.fi/u/wikla/OKP/S19/) at the University of Helsinki
+- @RikuMantysalo: Harvard's [CS50](https://pll.harvard.edu/course/cs50-introduction-computer-science)
+- @erikssa3: [The Imposter's Handbook](https://sales.bigmachine.io/imposter-second)
+- @jlehva: [Programming Languages: Principles and Paradigms](https://link.springer.com/book/10.1007/978-1-84882-914-5) and Arto Wikla's [Ohjelmointikielten periaatteet](https://www.cs.helsinki.fi/u/wikla/OKP/S19/) at the University of Helsinki
 
 #### Functional programming
 
@@ -233,7 +234,7 @@ These are especially recommended for self-taught programmers who feel they might
 - SICP, i.e [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html) now freely available online. Uses Scheme Lisp as the programming language.
 - [Javascript version of SICP](https://sicp.comp.nus.edu.sg/)
 - [Programming in Scala](https://deanwampler.github.io/books/programmingscala2.html)
-- [Real World Haskell](http://book.realworldhaskell.org/)
+- [Real World Haskell](https://book.realworldhaskell.org/)
 - [Functional Javascript](https://www.amazon.com/Functional-JavaScript-Introducing-Programming-Underscore-js/dp/1449360726) by Michael Fogus
 - [Mostly Adequate Guide to Functional Programming](https://github.com/MostlyAdequate/mostly-adequate-guide)
 - More on our [Functional Programming Reading List](https://github.com/reaktor/fp-reading-list)
@@ -244,7 +245,7 @@ These are especially recommended for self-taught programmers who feel they might
 
 Good automated tests are usually independent of each other, fast and test expected behaviour instead of internals. The independence of tests guarantees that you can run only the one failing test in isolation in order to find what is broken and fix it. This way you can find the problems faster due less clutter. Second, fast tests provide you short feedback loop that allows less interruptions when concentrating. Your unit tests especially should run fast (seconds, maximum of couple minutes for huge codebase’s all tests) and if they don’t, it pays off to improve the performance of your test suites. Lastly, tests should not break when tested code’s internals change while their functionality stays the same. When writing a test for some behaviour, I suggest comment out the behaviour you are testing and make sure the expected tests fail. This check makes sure that your tests are actually testing what you hope them to be testing. Writing behaviour-based tests is usually the hardest part to do correct and I personally learned it from and liked the way it was taught in [Robert Martin’s Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882). 
 
-For more about good test automation, I suggest reading about [software testing anti-patterns](http://blog.codepipes.com/testing/software-testing-antipatterns.html) which goes through many very typical mishaps about testing and provides good alternatives to try out.
+For more about good test automation, I suggest reading about [software testing anti-patterns](https://blog.codepipes.com/testing/software-testing-antipatterns.html) which goes through many very typical mishaps about testing and provides good alternatives to try out.
 
 #### Writing modular code
 #### Developing for maintainability and reliability
@@ -260,14 +261,14 @@ For more about good test automation, I suggest reading about [software testing a
 
 - @sluukkonen and @JaniL recommend [Computer Networking: A Top-Down Approach](https://www.amazon.com/Computer-Networking-Top-Down-Approach-7th/dp/0133594149) which is also part of the curriculum in Helsinki University
 - @kiesila This is excellent for networking: [Computer Networks by Andrew S. Tanenbaum](https://www.amazon.com/Computer-Networks-Tanenbaum-International-Economy/dp/9332518742) (Plus you get the chance to read stuff from one of the giants of CS, plus the man behind notorious comments about Linux...)
-- @timorantalaiho I studied networking basics from [TCP/IP Network Administration by Craig Hunt](http://shop.oreilly.com/product/9780596002978.do)
+- @timorantalaiho I studied networking basics from [TCP/IP Network Administration by Craig Hunt](https://www.oreilly.com/library/view/tcp-ip-network-administration/0596002971/)
 - @jkseppan check out [TCP/IP Illustrated by W. Richard Stevens](https://en.wikipedia.org/wiki/TCP/IP_Illustrated)
 - @joonamo [OWASP Top 10 Most Critical Web Application Security Risks](https://github.com/OWASP/Top10/blob/master/2017/OWASP%20Top%2010-2017%20(en).pdf)
-- @raimohanska check out [Web Application Hacker's Handbook](http://mdsec.net/wahh/) for in-depth knowledge of security breaches, attacks and defenses
+- @raimohanska check out [Web Application Hacker's Handbook](https://portswigger.net/web-security/web-application-hackers-handbook) for in-depth knowledge of security breaches, attacks and defenses
 - @jkseppan if you're ever tempted to roll your own crypto, working through even a few of these exercises should give you an idea of what you are up against: [cryptopals.com](https://cryptopals.com/)
 - @pihvi [Cloudflare Blog](https://blog.cloudflare.com/)
 - @miso For security, follow a few blogs (https://krebsonsecurity.com/, https://www.schneier.com/, https://www.troyhunt.com/), visit meetups, attend conferences
-- @miso The OWASP Secure coding practices page has some useful information for defensive coding (https://www.owasp.org/index.php/OWASP_Secure_Coding_Practices_-_Quick_Reference_Guide)
+- @miso The OWASP Secure coding practices page has some useful information for defensive coding (https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/)
 
 #### Build tools and pipelines
 #### Assessing different architecture/technological options
@@ -294,12 +295,12 @@ Also, make sure you have enough information to make your decision and be prepare
 
 @raimohanska Here are some beginner-friendly learning resources from my collagues:
 
-- @eagleflo Mozilla - Getting started with the Web https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web
+- @eagleflo Mozilla - Getting started with the Web https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website
 - @matthiaskern Eloquent Javascript https://eloquentjavascript.net/index.html
 - @raine Web developer roadmap https://github.com/kamranahmedse/developer-roadmap might be a bit intimidating but gives you an idea on what there is to learn. You don't have to know all this stuff to be productive though!
 - @kenkku The Helsinki University has a good Fullstack MOOC https://fullstackopen.com/ (edit: updated to 2020 version)
 - @ksnabb Helsinki University has good fullstack courses that can be found [here](https://www.mooc.fi/)
-- @serhatsezer Freecodecamp has really good hands-on articles and video tutorials about [full stack web development](https://www.freecodecamp.org/learn/)
+- @serhatsezer Freecodecamp has really good hands-on articles and video tutorials about [full stack web development](https://www.freecodecamp.org/learn)
 
 #### How to select frontend tools
 
@@ -330,7 +331,7 @@ Also, make sure you have enough information to make your decision and be prepare
 
 @simoraman Often when people hear serverless they think AWS Lambda. However AWS Fargate is also a form of serverless computing.  It removes the server setup and management work without requiring complete paradigm shift regarding how the application is built.  Docker technology is not tied to AWS and the software could also be deployed to regular server without docker without the need for a rewrite. It should be noted that in regards of pricing and scalability Fargate is very different from Lambda.
 @raimohanska For starters, serverless means just that you're running your code on somebody else's servers. 
-I agree with Simo and would like to point out that also easy-to-use PaaS services like Heroku are very much serverless too in the sense that you can easily push your application online and have the service provider take care of setting up servers and scaling out. The main difference to, say, AWS lambda is though that you'll be paying for the resources (instances, dynos whatnow) you've reserved while with Lambda you only pay for the computations that actually occurred. Also, don't confuse the serverless concept with [Serverless framework](https://serverless.com/) which allegedly make it easy to build serverless applications.
+I agree with Simo and would like to point out that also easy-to-use PaaS services like Heroku are very much serverless too in the sense that you can easily push your application online and have the service provider take care of setting up servers and scaling out. The main difference to, say, AWS lambda is though that you'll be paying for the resources (instances, dynos whatnow) you've reserved while with Lambda you only pay for the computations that actually occurred. Also, don't confuse the serverless concept with [Serverless framework](https://www.serverless.com/) which allegedly make it easy to build serverless applications.
 
 #### Single Page Application best practices:
 @eagleflo make your app “deep linkable”. Store state in the URL, so that each person who clicks a link will see the same content. Seen way too many SPAs which don’t follow that, kind of breaking what it means to be a *web* app.
@@ -348,9 +349,9 @@ Javascript skills in general are highly useful in all things web, as you can use
 
 @kettuniko The Event Loop is one of the fundamental things in JavaScript runtimes, and understanding it will help you with your day-to-day development tasks. Watch Jake Archibald's great presentation about how browser's event loop works https://www.youtube.com/watch?v=cCOL7MC4Pl0
 
-@jonikanerva Recommends [The Javascript Allonge](https://leanpub.com/javascriptallongesix/read)
+@jonikanerva Recommends [The Javascript Allonge](https://leanpub.com/read/javascriptallongesix)
 
-@raimohanska Nowadays a lot of Javascript development has seemed to moved to static typing with TypeScript. It's definitely worth checking out. You might want to start with reading [TypeScript Deep Dive](https://basarat.gitbooks.io/typescript/content/docs/getting-started.html).
+@raimohanska Nowadays a lot of Javascript development has seemed to moved to static typing with TypeScript. It's definitely worth checking out. You might want to start with reading [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/getting-started).
 
 #### Random tips
 Some randomish tips from our experts for web development:
@@ -364,7 +365,7 @@ Then, some very specific technologies were mentioned quite a few times too, incl
 #### React and related technologies
 @raimohanska I suggest you understand the basics of web technology, including Javascript and the DOM before reaching for tools like React. Yet, learning React makes sense and is worth investing your time into!
 
-@raimohanska When you've already dirtied (and burned?) your hands with React, you might want to check out the [You Might Not Need an Effect](https://beta.reactjs.org/learn/you-might-not-need-an-effect) article. 
+@raimohanska When you've already dirtied (and burned?) your hands with React, you might want to check out the [You Might Not Need an Effect](https://react.dev/learn/you-might-not-need-an-effect) article. 
 
 To be really effective with React (or any tech actually) it makes sense to know how it works under the hood. What a better way to achieve this than [Build your own React](https://pomb.us/build-your-own-react/)!
 
@@ -390,7 +391,7 @@ Unsurprisingly, many are seeking to get or stay aboard the cloud infrastructure 
 
 #### Learning cloud architecture skills
 
-@raimohanska The AWS Certified Solutions Architect - Associate [online course](https://acloud.guru/learn/aws-certified-solutions-architect-associate) is a good way to get started with AWS. For me, it's a bit too much geared towards getting certificate, but gives a good overall impression on AWS cloud services. You'll of course need some hands-on experience on top of this but the course definitely gives an overall impression on what's available.
+@raimohanska The AWS Certified Solutions Architect - Associate [online course](https://www.pluralsight.com/) is a good way to get started with AWS. For me, it's a bit too much geared towards getting certificate, but gives a good overall impression on AWS cloud services. You'll of course need some hands-on experience on top of this but the course definitely gives an overall impression on what's available.
 
 #### Future of cloud infrastructure; what to learn to stay relevant
 
@@ -423,9 +424,9 @@ I think @jylitalo's answer to the next question is very relevant when talking ab
 
 #### Kubernetes
 
-[@lauripiispanen](https://github.com/lauripiispanen): Kubernetes is a "container orchestration system for automating application deployment, scaling, and management". There are other solutions for the same problem, but as of Mar 2020 Kubernetes is by far the most popular. As per its definition, Kubernetes is a complex system. My recommendation is that if you're thinking "should I use Kubernetes", the answer in 99% of the cases is "no" (see other "serverless container engines" such as [AWS Fargate](https://aws.amazon.com/fargate/)). Also, even if you use Kubernetes, in 99% of the cases you do not wish to host one yourself (see [GKE](https://cloud.google.com/kubernetes-engine), [EKS](https://aws.amazon.com/eks/) or [AKS](https://azure.microsoft.com/en-us/services/kubernetes-service/)). All that being said, Kubernetes is something that you may be faced with in your career, particularly if you're working with larger IT organizations. Therefore, it is somewhat beneficial to learn how to use it.
+[@lauripiispanen](https://github.com/lauripiispanen): Kubernetes is a "container orchestration system for automating application deployment, scaling, and management". There are other solutions for the same problem, but as of Mar 2020 Kubernetes is by far the most popular. As per its definition, Kubernetes is a complex system. My recommendation is that if you're thinking "should I use Kubernetes", the answer in 99% of the cases is "no" (see other "serverless container engines" such as [AWS Fargate](https://aws.amazon.com/fargate/)). Also, even if you use Kubernetes, in 99% of the cases you do not wish to host one yourself (see [GKE](https://cloud.google.com/kubernetes-engine), [EKS](https://aws.amazon.com/eks/) or [AKS](https://azure.microsoft.com/en-us/products/kubernetes-service/)). All that being said, Kubernetes is something that you may be faced with in your career, particularly if you're working with larger IT organizations. Therefore, it is somewhat beneficial to learn how to use it.
 
-There are several online courses for Kubernetes (e.g. [cloud academy](https://cloudacademy.com/learning-paths/cloud-academy-introduction-to-kubernetes-92/)). Additionally, the Cloud Native Computing Foundation offers two certifications: [Certified Kubernetes Application Developer (CKAD)](https://www.cncf.io/certification/ckad/) and [Certified Kubernetes Administrator (CKA)](https://www.cncf.io/certification/cka/). Both of the certifications exams are very hands-on, and they are not easy.
+There are several online courses for Kubernetes (e.g. [cloud academy](https://platform.qa.com/learning-paths/cloud-academy-introduction-to-kubernetes-92/)). Additionally, the Cloud Native Computing Foundation offers two certifications: [Certified Kubernetes Application Developer (CKAD)](https://www.cncf.io/training/certification/ckad/) and [Certified Kubernetes Administrator (CKA)](https://www.cncf.io/training/certification/cka/). Both of the certifications exams are very hands-on, and they are not easy.
 
 DigitalOcean has a fun exercise/tutorial for [deploying Kubernetes with kubeadm](https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-cluster-using-kubeadm-on-ubuntu-18-04). For added fun, I recommend doing this with a fully infrastructure-as-a-code setup.
 
@@ -439,7 +440,7 @@ Suggestions for a good course/self study resource on CI/CD:
 
 * [Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation (Addison-Wesley Signature Series (Fowler))](https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912)
 * Github Actions [documentation](https://docs.github.com/en/actions) 
-* Helsinki University [fullstackopen](https://fullstackopen.com/en/part11) part 11 (added January 2021)
+* Helsinki University [fullstackopen](https://fullstackopen.com/en/part11/) part 11 (added January 2021)
 
 (added December 2021)
 * https://roadmap.sh/devops this is quite comprehensive roadmap
@@ -452,13 +453,13 @@ Suggestions for a good course/self study resource on CI/CD:
 
 ### Mobile development
 
-There are some many ways to do mobile these days, starting with native iOS and Android development and the very promising cross-platform [Flutter](https://flutter.io/?gclid=Cj0KCQiA3b3gBRDAARIsAL6D-N8r8pFzi0KQf3lvEgBCPGirUlpLlSQilQdoI6cxK0n70Knc_Aj8P84aAifDEALw_wcB), not to forget the possibility of writing a [PWA](https://developers.google.com/web/progressive-web-apps/) (just a web page really) that fit some needs pretty well too. For both of these good starting points are [here](https://developers.google.com/training/).
+There are some many ways to do mobile these days, starting with native iOS and Android development and the very promising cross-platform [Flutter](https://flutter.dev/), not to forget the possibility of writing a [PWA](https://web.dev/explore/progressive-web-apps) (just a web page really) that fit some needs pretty well too. For both of these good starting points are [here](https://developers.google.com/learn).
 
 #### Android
 
-@arimkevi Among our experts, there seems to be a strong consensus here that on Android you should use Kotlin (see [resource list](https://github.com/KotlinBy/awesome-kotlin)). Download Android Studio, fire up an emulator and get started on building something! Official documentations has a good [step-by-step](https://developer.android.com/guide/) on how to do this. It is also beneficial to check out the [best practices](https://github.com/futurice/android-best-practices) by Futurice. The best practice guide has a extensive listing of libraries and tooling often used.
+@arimkevi Among our experts, there seems to be a strong consensus here that on Android you should use Kotlin (see [resource list](https://github.com/Heapy/awesome-kotlin)). Download Android Studio, fire up an emulator and get started on building something! Official documentations has a good [step-by-step](https://developer.android.com/get-started/overview) on how to do this. It is also beneficial to check out the [best practices](https://github.com/futurice/android-best-practices) by Futurice. The best practice guide has a extensive listing of libraries and tooling often used.
 
-If you like to check out some courses first, Google and Udacity provide a very extensive free training program in the [Google Developer Training portal](https://developers.google.com/training/android/). Free courses range from total beginner to advanced and UX and design.
+If you like to check out some courses first, Google and Udacity provide a very extensive free training program in the [Google Developer Training portal](https://developer.android.com/courses). Free courses range from total beginner to advanced and UX and design.
 
 Once you need a backend for your application, it’s good to check out what [Firebase](https://firebase.google.com/docs/android/setup) has to offer. It’s a quick way to get your crash reporting, analytics, persistence and APIs up and going fast.
 
